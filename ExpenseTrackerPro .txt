@@ -1,0 +1,226 @@
+@app.py/project_1
+
+                     # DOCUMENTATION - Expense Tracker Pro
+
+
+
+Author/Developer :- Mayank Gautam
+Platform :- Streamlit Cloud
+Link :-  https://expansestracker-mayankgautam.streamlit.app/
+Technologies Used :- Python, Streamlit, Pandas, TOML Secrets, CSV Database
+
+
+---
+
+## 1. PROJECT TITLE
+
+ **Expense Tracker Pro – A Smart Online Expense Management System**
+
+
+---
+
+## 2. INTRODUCTION
+
+Expense Tracker Pro is a modern, web-based application created to help users record, track, and analyse their daily expenses.
+Unlike traditional Python scripts that run only on a local computer, this project is fully deployed on the cloud using Streamlit, making it accessible to anyone, anywhere, without downloading code.
+
+The project allows users to add expenses, view history, check totals, generate analytics, and provides a secure Admin Dashboard protected through encrypted Streamlit Secrets (TOML-based authentication).
+
+
+---
+
+## 3. OBJECTIVE OF THE PROJECT
+
+1. To provide an accessible online expense tracking application.
+2. To convert a Python console application into a professional web UI.
+3. To ensure multi-user availability without downloading or running Python code locally.
+4. To add admin-level analytics and dashboards for deeper insights.
+5. To protect the admin panel using secure environment variable login.
+
+
+
+
+---
+
+## 4. FEATURES OF THE APPLICATION
+
+A. User Features
+
+ - Add new expenses
+ - Select category (Food, Transport, Shopping, Bills, Other)
+ - Auto-save expenses to CSV
+ - View complete transaction history
+ - Data shown in table format
+ - Total money spent
+ - Total number of transactions
+ - Works on phone, laptop, and tablet
+
+
+B. Admin Features
+
+(Admin Login Required)
+
+ - Secure authentication using Streamlit Secrets
+ - View all user data
+ - Category-wise analytics
+ - Total spending report
+ - Summary metrics
+ - Professional dashboard interface
+
+
+C. Security Features
+
+  - Admin password stored in Streamlit Secrets (NOT in code)
+  - TOML-based encrypted storage
+  - No hard-coded login credentials
+  - Prevents unauthorized admin access
+  - case sensitivity in login panel
+
+
+
+---
+
+## 5. TECHNOLOGIES USED
+
+Frontend
+
+Streamlit UI
+Streamlit Sidebar
+Custom HTML Styling
+
+
+Backend
+
+Python
+CSV Storage
+Pandas Data Processing
+DateTime Module
+
+
+Security
+
+Streamlit Secrets (TOML Variables)
+full admin control
+Cloud Environment Variables
+
+
+Deployment :
+
+Streamlit Cloud
+Connected with GitHub Repository
+
+
+
+---
+
+## 6. HOW IT WORKS (WORKFLOW)
+
+Step 1 — User Opens the App
+
+App loads with title Expense Tracker Pro.
+
+Step 2 — User Adds an Expense
+
+Select category
+
+   Enter description
+   Enter amount
+
+   Click “Add Expense”
+   → Expense saved instantly in expenses.csv
+
+
+Step 3 — Expense Stored
+
+     Pandas writes the entry in CSV format:
+     Date, Category, Description, Amount
+
+Step 4 — View History
+
+     User can see all previously added expenses in table format.
+
+Step 5 — Admin Login
+
+    Admin opens “Admin Panel” → enters username & password
+    Authentication checked using:
+    ADMIN_USER = st.secrets["ADMIN_USER"]
+    ADMIN_PASS = st.secrets["ADMIN_PASS"]
+    If matched → Admin Dashboard opens.
+
+Step 6 — Admin Dashboard
+
+Shows:
+
+Total expenses
+Total transactions
+Category-wise spending
+Analytics charts
+
+---
+
+## 7. SYSTEM REQUIREMENTS
+
+  Client Side
+      .  Any browser
+      .  Internet connection
+
+ Server Side
+      . Streamlit Cloud hosting
+      . GitHub repository
+      . Python 3.9+
+
+
+---
+
+## 8. ADVANTAGES OF THE SYSTEM
+
+- Completely online
+- No installation required
+- Simple and user-friendly
+- Real-time expense tracking
+- Secure admin controls
+- Cloud-hosted & accessible anywhere
+
+
+
+---
+
+##9. LIMITATIONS
+CSV-based storage (not SQL)
+No login system for multiple users
+Requires internet connectivity
+
+*but these all are not long term issues i can easily handle it when it comes on to build this production ready product
+
+
+
+---
+
+## 10. FUTURE SCOPE
+
+This project can be extended with:
+Monthly charts & reports
+Export to PDF/Excel
+Voice input for expenses
+Multi-user accounts
+Email notifications
+Cloud database (Firebase / MongoDB)
+Mobile app version
+
+
+
+---
+
+## 11. CONCLUSION
+
+Expense Tracker Pro successfully transforms a local Python expense-tracking script into a secure, cloud-based web application.
+It demonstrates concepts of:
+
+Python programming
+Web development using Streamlit
+Data handling using Pandas
+Cloud deployment
+Secure environment variable management
+
+
+The project is fully functional and accessible via a live link, making it practical for real-world everyday use.
